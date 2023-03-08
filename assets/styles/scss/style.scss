@@ -73,11 +73,12 @@ header {
                             top: 70%;
                             background-color: #000000;
                         }
+
                         &:hover {
-                                a:not(.socialConnect) {
-                                    padding: 30% 10%;
-                                    transition: padding .3s;
-                                }
+                            a:not(.socialConnect) {
+                                padding: 30% 10%;
+                                transition: padding .3s;
+                            }
                         }
                     }
 
@@ -1224,26 +1225,19 @@ footer {
             display: flex;
             justify-content: center;
         }
+
+        span.author {
+            padding: 0 2%;
+            position: fixed;
+            bottom: 0;
+            background-color: #ffffff8a;
+            a.contact_me {
+                color: #00605c;
+                &:hover{
+                    color: #0f0064;
+                }
+            }
+        }
+
     }
 }
-
-
-// /* Extra large devices */
-// @media (min-width: 1200px) {
-//     ...
-// }
-
-// /* desktops */
-// @media (max-width: 992px) {
-//     ...
-// }
-
-// /* tablets */
-// @media (max-width: 768px) {
-//     ...
-// }
-
-// /* phones */
-// @media (max-width: 576px) {
-//     ...
-// }

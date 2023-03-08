@@ -1270,3 +1270,15 @@ footer #footer .copyright {
       -ms-flex-pack: center;
           justify-content: center;
 }
+footer #footer span.author {
+  padding: 0 2%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5411764706);
+}
+footer #footer span.author a.contact_me {
+  color: #00605c;
+}
+footer #footer span.author a.contact_me:hover {
+  color: #0f0064;
+}
