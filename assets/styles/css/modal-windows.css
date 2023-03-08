@@ -84,7 +84,7 @@
   background: #dbcdc2;
 }
 .modal .modal-content .share-options div.featureBlock .featureContainer {
-  background: url(/assets/styles/images/Pictures/feature_bgi_1.png) no-repeat bottom/100%;
+  background: url(../images/Pictures/feature_bgi_1.png) no-repeat bottom/100%;
 }
 .modal .modal-content .share-options div.featureBlock .featureContainer .textBox h1 {
   margin-bottom: 5rem;
