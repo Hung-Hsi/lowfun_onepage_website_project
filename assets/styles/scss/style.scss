@@ -113,7 +113,7 @@ header {
             flex-shrink: 1;
             height: 54.36px;
             width: 290.6px;
-            background: no-repeat center/100% url(/assets/styles/images/Icons/LOGO.png);
+            background: no-repeat center/100% url(../images/Icons/LOGO.png);
 
             @media (max-width: 850px) {
                 position: fixed;
@@ -497,7 +497,7 @@ main {
 
             @media (max-width: 576px) {
                 padding: 2rem 6.8%;
-                background: url(/assets/styles/images/Pictures/story_bgi.png) no-repeat bottom right/70% #A88C76;
+                background: url(../images/Pictures/story_bgi.png) no-repeat bottom right/70% #A88C76;
 
                 div.shadowCut_1,
                 div.shadowCut_2 {
@@ -515,7 +515,7 @@ main {
         }
 
         div.feature_bgi {
-            background: url(/assets/styles/images/Pictures/feature_bgi.png) no-repeat center/cover;
+            background: url(../images/Pictures/feature_bgi.png) no-repeat center/cover;
             background-attachment: fixed;
         }
 
@@ -626,15 +626,15 @@ main {
                                     overflow: hidden;
 
                                     &.box_1 {
-                                        background: url(/assets/styles/images/Pictures/feature_1.png) no-repeat center/cover;
+                                        background: url(../images/Pictures/feature_1.png) no-repeat center/cover;
                                     }
 
                                     &.box_2 {
-                                        background: url(/assets/styles/images/Pictures/feature_2.png) no-repeat center/cover;
+                                        background: url(../images/Pictures/feature_2.png) no-repeat center/cover;
                                     }
 
                                     &.box_3 {
-                                        background: url(/assets/styles/images/Pictures/feature_3.png) no-repeat center/cover;
+                                        background: url(../images/Pictures/feature_3.png) no-repeat center/cover;
                                     }
                                 }
                             }
@@ -658,7 +658,7 @@ main {
         font-weight: 600;
 
         div.drink_bgi {
-            background: url(/assets/styles/images/Pictures/menu_bgi.png) no-repeat center/100%;
+            background: url(../images/Pictures/menu_bgi.png) no-repeat center/100%;
             background-attachment: fixed;
         }
 
@@ -1030,7 +1030,7 @@ main {
 
     #media {
         padding: 4rem 5%;
-        background: url(/assets/styles/images/Pictures/media_bgi.png) no-repeat center/cover;
+        background: url(../images/Pictures/media_bgi.png) no-repeat center/cover;
 
         div.mediaContainer {
             display: flex;
@@ -1107,7 +1107,7 @@ footer {
                 padding: 0rem 2% 4rem 5%;
                 display: flex;
                 justify-content: space-around;
-                background: url(/assets/styles/images/Icons/footer_icon.png) no-repeat right bottom/contain;
+                background: url(../images/Icons/footer_icon.png) no-repeat right bottom/contain;
 
                 div.infoContainer {
                     // padding: 4rem 0;

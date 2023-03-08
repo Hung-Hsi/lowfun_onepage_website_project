@@ -104,7 +104,7 @@ header nav #logo {
       flex-shrink: 1;
   height: 54.36px;
   width: 290.6px;
-  background: no-repeat center/100% url(/assets/styles/images/Icons/LOGO.png);
+  background: no-repeat center/100% url(../images/Icons/LOGO.png);
 }
 @media (max-width: 850px) {
   header nav #logo {
@@ -472,7 +472,7 @@ main #aboutUs div.story div.text {
 @media (max-width: 576px) {
   main #aboutUs div.story {
     padding: 2rem 6.8%;
-    background: url(/assets/styles/images/Pictures/story_bgi.png) no-repeat bottom right/70% #A88C76;
+    background: url(../images/Pictures/story_bgi.png) no-repeat bottom right/70% #A88C76;
   }
   main #aboutUs div.story div.shadowCut_1,
   main #aboutUs div.story div.shadowCut_2 {
@@ -489,7 +489,7 @@ main #aboutUs div.story div.text {
   }
 }
 main #aboutUs div.feature_bgi {
-  background: url(/assets/styles/images/Pictures/feature_bgi.png) no-repeat center/cover;
+  background: url(../images/Pictures/feature_bgi.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 main #aboutUs div.feature {
@@ -599,13 +599,13 @@ main #aboutUs div.feature div.floor div.block.showBox img {
     overflow: hidden;
   }
   main #aboutUs div.feature div.floor div.block.showBox a.group div.cboxElement.box_1 {
-    background: url(/assets/styles/images/Pictures/feature_1.png) no-repeat center/cover;
+    background: url(../images/Pictures/feature_1.png) no-repeat center/cover;
   }
   main #aboutUs div.feature div.floor div.block.showBox a.group div.cboxElement.box_2 {
-    background: url(/assets/styles/images/Pictures/feature_2.png) no-repeat center/cover;
+    background: url(../images/Pictures/feature_2.png) no-repeat center/cover;
   }
   main #aboutUs div.feature div.floor div.block.showBox a.group div.cboxElement.box_3 {
-    background: url(/assets/styles/images/Pictures/feature_3.png) no-repeat center/cover;
+    background: url(../images/Pictures/feature_3.png) no-repeat center/cover;
   }
 }
 main #aboutUs div.feature div.featureText {
@@ -620,7 +620,7 @@ main #drink {
   font-weight: 600;
 }
 main #drink div.drink_bgi {
-  background: url(/assets/styles/images/Pictures/menu_bgi.png) no-repeat center/100%;
+  background: url(../images/Pictures/menu_bgi.png) no-repeat center/100%;
   background-attachment: fixed;
 }
 main #drink div.container {
@@ -1052,7 +1052,7 @@ main #drink div.container div.menuContainer div.sugar div.menuSugar img {
 }
 main #media {
   padding: 4rem 5%;
-  background: url(/assets/styles/images/Pictures/media_bgi.png) no-repeat center/cover;
+  background: url(../images/Pictures/media_bgi.png) no-repeat center/cover;
 }
 main #media div.mediaContainer {
   display: -webkit-box;
@@ -1140,7 +1140,7 @@ footer #footer div.info div.infoBackground {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: url(/assets/styles/images/Icons/footer_icon.png) no-repeat right bottom/contain;
+  background: url(../images/Icons/footer_icon.png) no-repeat right bottom/contain;
 }
 footer #footer div.info div.infoBackground div.infoContainer {
   display: -webkit-box;
