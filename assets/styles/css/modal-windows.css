@@ -66,11 +66,22 @@
   font-size: 1.8rem;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .modal .modal-content .share-options div.windowBlock .Container .textBox {
+    padding: 5%;
+  }
+}
 .modal .modal-content .share-options div.storyBlock {
   background-color: #C9BEB0;
 }
 .modal .modal-content .share-options div.storyBlock .storyContainer .textBox {
   background-color: rgba(255, 255, 255, 0.3764705882);
+  padding: 3rem 1.5rem 3rem 20%;
+}
+@media (max-width: 1100px) {
+  .modal .modal-content .share-options div.storyBlock .storyContainer .textBox {
+    padding: 10%;
+  }
 }
 .modal .modal-content .share-options div.storyBlock img {
   width: 70%;
