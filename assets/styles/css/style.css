@@ -588,7 +588,7 @@ main #aboutUs div.feature div.floor div.block.showBox img {
     margin: 0 1.5%;
     width: 100%;
   }
-  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.cboxElement {
+  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.smElement {
     width: 100%;
     height: 7rem;
     display: -webkit-box;
@@ -598,13 +598,13 @@ main #aboutUs div.feature div.floor div.block.showBox img {
         justify-content: space-around;
     overflow: hidden;
   }
-  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.cboxElement.box_1 {
+  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.smElement.box_1 {
     background: url(../images/Pictures/feature_1.png) no-repeat center/cover;
   }
-  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.cboxElement.box_2 {
+  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.smElement.box_2 {
     background: url(../images/Pictures/feature_2.png) no-repeat center/cover;
   }
-  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.cboxElement.box_3 {
+  main #aboutUs div.feature div.floor div.block.showBox a.group_sm div.smElement.box_3 {
     background: url(../images/Pictures/feature_3.png) no-repeat center/cover;
   }
 }
