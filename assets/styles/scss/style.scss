@@ -518,6 +518,10 @@ main {
         div.feature_bgi {
             background: url(../images/Pictures/feature_bgi.png) no-repeat center/cover;
             background-attachment: fixed;
+
+            @media (max-width:576px) {
+                background-attachment: local;
+            }
         }
 
         div.feature {
@@ -655,13 +659,18 @@ main {
 
     #drink {
         // height: 100vh;
-        background-color: #B5ACA3;
         font-weight: 600;
 
-        div.drink_bgi {
-            background: url(../images/Pictures/menu_bgi.png) no-repeat center/100%;
+        &.drink_bgi {
+            background: url(../images/Pictures/menu_bgi.png) no-repeat center/cover;
             background-attachment: fixed;
+            background-color: #B5ACA3;
+
+            @media (max-width:576px) {
+                background-attachment: local;
+            }
         }
+
 
         div.container {
             padding: 3rem 0;
@@ -671,6 +680,10 @@ main {
             flex-direction: column;
             justify-content: center;
             // align-items: center;
+
+            @media (max-width:768px) {
+                padding: 2rem 0 0;
+            }
 
             div.drinkContainer {
                 padding: 0 6.8%;
@@ -928,7 +941,7 @@ main {
             }
 
             div.menuContainer {
-                padding: 4rem 0 0%;
+                padding: 1.5rem 0 0%;
                 display: flex;
                 justify-content: space-between;
 
@@ -1231,9 +1244,11 @@ footer {
             position: fixed;
             bottom: 0;
             background-color: #ffffff8a;
+
             a.contact_me {
                 color: #00605c;
-                &:hover{
+
+                &:hover {
                     color: #0f0064;
                 }
             }
