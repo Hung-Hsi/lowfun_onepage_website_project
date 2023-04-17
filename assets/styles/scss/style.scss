@@ -55,12 +55,23 @@ html {
 }
 
 header {
-
     @media (min-width: 851px) {
         nav.scrolled {
-            padding: .2rem 5%;
+            padding: .2rem 15%;
             background-color: #ffffff;
             color: #000000;
+
+            @media (max-width: 1600px) {
+                padding: .2rem 10%;
+            }
+
+            @media (max-width: 1400px) {
+                padding: .2rem 5%;
+            }
+
+            @media (max-width: 1200px) {
+                padding: .2rem 1%;
+            }
 
             @media (max-width: 992px) {
                 padding: .2rem 0;
@@ -90,7 +101,7 @@ header {
 
 
     nav {
-        padding: 2rem 5%;
+        padding: 2rem 15%;
         max-height: 100px;
         width: 100%;
         display: flex;
@@ -100,11 +111,25 @@ header {
         background-color: #ffffff00;
         position: fixed;
         top: 0;
+        left: 50%;
+        translate: -50%;
         z-index: 5;
         transition: padding .4s,
             background-color .1s,
             color .3s,
             top .5s;
+
+        @media (max-width: 1600px) {
+            padding: 2rem 10%;
+        }
+
+        @media (max-width: 1400px) {
+            padding: 2rem 5%;
+        }
+
+        @media (max-width: 1200px) {
+            padding: 2rem 1%;
+        }
 
         @media (max-width: 992px) {
             padding: 2rem 0;
@@ -124,6 +149,8 @@ header {
         }
 
         @media (max-width: 850px) {
+
+            // overflow: hidden;
             div.nav-trigger {
                 display: block;
                 position: fixed;
@@ -273,8 +300,7 @@ header {
                 height: 100vh;
                 background: #fff;
                 position: fixed;
-                display: block;
-
+                display: none;
 
                 top: -100%;
                 right: -100%;
@@ -286,6 +312,7 @@ header {
                     opacity ease-in .5s, ;
 
                 &.active {
+                    display: block;
                     top: 0%;
                     right: 0%;
                     border-radius: 0 0 0 0;
@@ -398,7 +425,8 @@ main {
 
     #aboutUs {
         div.about {
-            background-color: #6e5a4b;
+            margin: 0 auto;
+            // background-color: #6e5a4b;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -466,10 +494,14 @@ main {
             }
         }
 
+        div.story_bg {
+            background-color: #A88C76;
+        }
+
         div.story {
             padding: 5rem 3rem;
+            max-width: 1200px;
             // min-height: 500px;
-            background-color: #A88C76;
 
             div.shadowCut {
                 z-index: 0;
@@ -515,7 +547,7 @@ main {
             }
         }
 
-        div.feature_bgi {
+        div.feature_bg {
             background: url(../images/Pictures/feature_bgi.png) no-repeat center/cover;
             background-attachment: fixed;
 
@@ -525,8 +557,8 @@ main {
         }
 
         div.feature {
-
             padding: 5% 0;
+            max-width: 1200px;
             position: relative;
             flex-direction: column;
 
@@ -679,7 +711,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // align-items: center;
+            align-items: center;
 
             @media (max-width:768px) {
                 padding: 2rem 0 0;
@@ -687,9 +719,14 @@ main {
 
             div.drinkContainer {
                 padding: 0 6.8%;
+                width: 1200px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
 
                 div.menuTop {
                     display: flex;
@@ -942,8 +979,13 @@ main {
 
             div.menuContainer {
                 padding: 1.5rem 0 0%;
+                width: 1200px;
                 display: flex;
                 justify-content: space-between;
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
 
                 div.menuBlock {
                     width: 65%;
@@ -1047,6 +1089,8 @@ main {
         background: url(../images/Pictures/media_bgi.png) no-repeat center/cover;
 
         div.mediaContainer {
+            margin: 0 auto;
+            max-width: 1200px;
             display: flex;
             justify-content: space-between;
 
@@ -1113,14 +1157,20 @@ footer {
         align-items: center;
 
         div.info {
-            padding: 4rem 3% 0;
-            width: 100%;
+            padding: 4rem 0 0;
+            width: 1200px;
+            // width: 100%;
             font-weight: 600;
 
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+            }
+
             div.infoBackground {
-                padding: 0rem 2% 4rem 5%;
+                padding: 0rem 1% 4rem;
+                margin: 0 auto;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 background: url(../images/Icons/footer_icon.png) no-repeat right bottom/contain;
 
                 div.infoContainer {
@@ -1231,7 +1281,8 @@ footer {
 
         .copyright {
             padding: .5% 3%;
-            width: 100%;
+            // width: 100%;
+            max-width: 1200px;
             background-color: #4C3F33;
             color: #fff;
             font-size: 12px;

@@ -28,6 +28,7 @@
           align-items: center;
 }
 .modal .modal-content .share-options div.windowBlock {
+  max-width: 1200px;
   padding: 6% 8%;
   position: relative;
   z-index: 1;

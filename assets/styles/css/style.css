@@ -52,9 +52,24 @@ html body {
 
 @media (min-width: 851px) {
   header nav.scrolled {
-    padding: 0.2rem 5%;
+    padding: 0.2rem 15%;
     background-color: #ffffff;
     color: #000000;
+  }
+}
+@media (min-width: 851px) and (max-width: 1600px) {
+  header nav.scrolled {
+    padding: 0.2rem 10%;
+  }
+}
+@media (min-width: 851px) and (max-width: 1400px) {
+  header nav.scrolled {
+    padding: 0.2rem 5%;
+  }
+}
+@media (min-width: 851px) and (max-width: 1200px) {
+  header nav.scrolled {
+    padding: 0.2rem 1%;
   }
 }
 @media (min-width: 851px) and (max-width: 992px) {
@@ -74,7 +89,7 @@ html body {
   }
 }
 header nav {
-  padding: 2rem 5%;
+  padding: 2rem 15%;
   max-height: 100px;
   width: 100%;
   display: -webkit-box;
@@ -90,9 +105,26 @@ header nav {
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
   top: 0;
+  left: 50%;
+  translate: -50%;
   z-index: 5;
   -webkit-transition: padding 0.4s, background-color 0.1s, color 0.3s, top 0.5s;
   transition: padding 0.4s, background-color 0.1s, color 0.3s, top 0.5s;
+}
+@media (max-width: 1600px) {
+  header nav {
+    padding: 2rem 10%;
+  }
+}
+@media (max-width: 1400px) {
+  header nav {
+    padding: 2rem 5%;
+  }
+}
+@media (max-width: 1200px) {
+  header nav {
+    padding: 2rem 1%;
+  }
 }
 @media (max-width: 992px) {
   header nav {
@@ -254,7 +286,7 @@ header nav div.menu-list div.ul-container ul span.verticalBar {
     height: 100vh;
     background: #fff;
     position: fixed;
-    display: block;
+    display: none;
     top: -100%;
     right: -100%;
     border-radius: 0 0 0 99em;
@@ -263,6 +295,7 @@ header nav div.menu-list div.ul-container ul span.verticalBar {
     transition: top ease-in-out 0.3s, right ease-in-out 0.3s, border-radius ease-out 0.5s, opacity ease-in 0.5s;
   }
   header nav div.menu-list.active {
+    display: block;
     top: 0%;
     right: 0%;
     border-radius: 0 0 0 0;
@@ -364,7 +397,7 @@ main #banner #scene div img {
   width: 100%;
 }
 main #aboutUs div.about {
-  background-color: #6e5a4b;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,9 +478,12 @@ main #aboutUs div.about div.textContainer div.text a.share:hover {
 main #aboutUs div.about div.textContainer div.text a.share:hover span {
   margin-right: 2rem;
 }
+main #aboutUs div.story_bg {
+  background-color: #A88C76;
+}
 main #aboutUs div.story {
   padding: 5rem 3rem;
-  background-color: #A88C76;
+  max-width: 1200px;
 }
 main #aboutUs div.story div.shadowCut {
   z-index: 0;
@@ -488,17 +524,18 @@ main #aboutUs div.story div.text {
     margin: 0 0 2rem 0;
   }
 }
-main #aboutUs div.feature_bgi {
+main #aboutUs div.feature_bg {
   background: url(../images/Pictures/feature_bgi.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 @media (max-width: 576px) {
-  main #aboutUs div.feature_bgi {
+  main #aboutUs div.feature_bg {
     background-attachment: local;
   }
 }
 main #aboutUs div.feature {
   padding: 5% 0;
+  max-width: 1200px;
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -647,6 +684,9 @@ main #drink div.container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 768px) {
   main #drink div.container {
@@ -655,6 +695,7 @@ main #drink div.container {
 }
 main #drink div.container div.drinkContainer {
   padding: 0 6.8%;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,6 +706,11 @@ main #drink div.container div.drinkContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  main #drink div.container div.drinkContainer {
+    width: 100%;
+  }
 }
 main #drink div.container div.drinkContainer div.menuTop {
   display: -webkit-box;
@@ -948,12 +994,18 @@ main #drink div.container div.drinkContainer div.drinkBlock.slider div.slide-but
 }
 main #drink div.container div.menuContainer {
   padding: 1.5rem 0 0%;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  main #drink div.container div.menuContainer {
+    width: 100%;
+  }
 }
 main #drink div.container div.menuContainer div.menuBlock {
   width: 65%;
@@ -1070,6 +1122,8 @@ main #media {
   background: url(../images/Pictures/media_bgi.png) no-repeat center/cover;
 }
 main #media div.mediaContainer {
+  margin: 0 auto;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1144,17 +1198,24 @@ footer #footer {
           align-items: center;
 }
 footer #footer div.info {
-  padding: 4rem 3% 0;
-  width: 100%;
+  padding: 4rem 0 0;
+  width: 1200px;
   font-weight: 600;
 }
+@media screen and (max-width: 1200px) {
+  footer #footer div.info {
+    width: 100%;
+  }
+}
 footer #footer div.info div.infoBackground {
-  padding: 0rem 2% 4rem 5%;
+  padding: 0rem 1% 4rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: url(../images/Icons/footer_icon.png) no-repeat right bottom/contain;
 }
 footer #footer div.info div.infoBackground div.infoContainer {
@@ -1274,7 +1335,7 @@ footer #footer div.info div.infoBackground ul.infoLink li a.socialConnect:hover 
 }
 footer #footer .copyright {
   padding: 0.5% 3%;
-  width: 100%;
+  max-width: 1200px;
   background-color: #4C3F33;
   color: #fff;
   font-size: 12px;
