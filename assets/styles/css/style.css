@@ -280,13 +280,15 @@ header nav div.menu-list div.ul-container ul span.verticalBar {
 @media (max-width: 850px) {
   header nav {
     position: relative;
+    left: unset;
+    translate: unset;
   }
   header nav div.menu-list {
     width: 100%;
     height: 100vh;
     background: #fff;
     position: fixed;
-    display: none;
+    display: block;
     top: -100%;
     right: -100%;
     border-radius: 0 0 0 99em;
@@ -295,7 +297,6 @@ header nav div.menu-list div.ul-container ul span.verticalBar {
     transition: top ease-in-out 0.3s, right ease-in-out 0.3s, border-radius ease-out 0.5s, opacity ease-in 0.5s;
   }
   header nav div.menu-list.active {
-    display: block;
     top: 0%;
     right: 0%;
     border-radius: 0 0 0 0;
